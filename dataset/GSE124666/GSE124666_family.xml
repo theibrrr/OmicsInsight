@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Gerhard</First><Last>Leubner-Metzger</Last></Person>
+    <Email>gerhard.leubner@rhul.ac.uk</Email>
+    <Department>Biological Sciences</Department>
+    <Organization>Royal Holloway University of London</Organization>
+    <Address>
+      <Line>Bourne Building 3-30</Line>
+      <City>Egham</City>
+      <State>Surrey</State>
+      <Postal-Code>TW20 OEX</Postal-Code>
+      <Country>United Kingdom</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Melissa</First><Last>Brazier-Hicks</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Anushka</First><Last>Howell</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Jonathan</First><Last>Cohn</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Tim</First><Last>Hawkes</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Gavin</First><Last>Hall</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Robert</First><Last>Edwards</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL13160">
+    <Status database="GEO">
+      <Submission-Date>2011-02-11</Submission-Date>
+      <Release-Date>2011-02-11</Release-Date>
+      <Last-Update-Date>2014-10-21</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 2000 (Oryza sativa)</Title>
+    <Accession database="GEO">GPL13160</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="4530">Oryza sativa</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM3538990">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl30 [NGS247_0001R_RFS28]</Title>
+    <Accession database="GEO">GSM3538990</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0001R_RFS28
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691498" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203264" />
+  </Sample>
+
+  <Sample iid="GSM3538991">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl30 [NGS247_0002R_RFS29]</Title>
+    <Accession database="GEO">GSM3538991</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0002R_RFS29
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691497" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203265" />
+  </Sample>
+
+  <Sample iid="GSM3538992">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl30 [NGS247_0003R_RFS30]</Title>
+    <Accession database="GEO">GSM3538992</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0003R_RFS30
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691496" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203266" />
+  </Sample>
+
+  <Sample iid="GSM3538993">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl90 [NGS247_0004R_RFS31]</Title>
+    <Accession database="GEO">GSM3538993</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0004R_RFS31
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691495" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203267" />
+  </Sample>
+
+  <Sample iid="GSM3538994">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl90 [NGS247_0005R_RFS32]</Title>
+    <Accession database="GEO">GSM3538994</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0005R_RFS32
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691494" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203268" />
+  </Sample>
+
+  <Sample iid="GSM3538995">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl90 [NGS247_0006R_RFS33]</Title>
+    <Accession database="GEO">GSM3538995</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0006R_RFS33
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691493" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203269" />
+  </Sample>
+
+  <Sample iid="GSM3538996">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl240 [NGS247_0007R_RFS34]</Title>
+    <Accession database="GEO">GSM3538996</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0007R_RFS34
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691492" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203270" />
+  </Sample>
+
+  <Sample iid="GSM3538997">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl240 [NGS247_0008R_RFS35]</Title>
+    <Accession database="GEO">GSM3538997</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0008R_RFS35
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691491" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203271" />
+  </Sample>
+
+  <Sample iid="GSM3538998">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>ctrl240 [NGS247_0009R_RFS36]</Title>
+    <Accession database="GEO">GSM3538998</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+DMSO
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0009R_RFS36
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691490" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203272" />
+  </Sample>
+
+  <Sample iid="GSM3538999">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest30 [NGS247_0010R_RFS37]</Title>
+    <Accession database="GEO">GSM3538999</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0010R_RFS37
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691489" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203273" />
+  </Sample>
+
+  <Sample iid="GSM3539000">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest30 [NGS247_0011R_RFS38]</Title>
+    <Accession database="GEO">GSM3539000</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0011R_RFS38
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691488" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203274" />
+  </Sample>
+
+  <Sample iid="GSM3539001">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest30 [NGS247_0012R_RFS39]</Title>
+    <Accession database="GEO">GSM3539001</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0012R_RFS39
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691487" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203275" />
+  </Sample>
+
+  <Sample iid="GSM3539002">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest90 [NGS247_0013R_RFS40]</Title>
+    <Accession database="GEO">GSM3539002</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0013R_RFS40
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691486" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203276" />
+  </Sample>
+
+  <Sample iid="GSM3539003">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest90 [NGS247_0014R_RFS41]</Title>
+    <Accession database="GEO">GSM3539003</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0014R_RFS41
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691485" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203277" />
+  </Sample>
+
+  <Sample iid="GSM3539004">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest90 [NGS247_0015R_RFS42]</Title>
+    <Accession database="GEO">GSM3539004</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0015R_RFS42
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691484" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203278" />
+  </Sample>
+
+  <Sample iid="GSM3539005">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest240 [NGS247_0016R_RFS43]</Title>
+    <Accession database="GEO">GSM3539005</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0016R_RFS43
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691483" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203279" />
+  </Sample>
+
+  <Sample iid="GSM3539006">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest240 [NGS247_0017R_RFS44]</Title>
+    <Accession database="GEO">GSM3539006</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0017R_RFS44
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691482" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203280" />
+  </Sample>
+
+  <Sample iid="GSM3539007">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>crest240 [NGS247_0018R_RFS45]</Title>
+    <Accession database="GEO">GSM3539007</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Metcamifen
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0018R_RFS45
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691481" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203281" />
+  </Sample>
+
+  <Sample iid="GSM3539008">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro30 [NGS247_0019R_RFS46]</Title>
+    <Accession database="GEO">GSM3539008</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0019R_RFS46
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691480" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203282" />
+  </Sample>
+
+  <Sample iid="GSM3539009">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro30 [NGS247_0020R_RFS47]</Title>
+    <Accession database="GEO">GSM3539009</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0020R_RFS47
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691479" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203283" />
+  </Sample>
+
+  <Sample iid="GSM3539010">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro30 [NGS247_0021R_RFS48]</Title>
+    <Accession database="GEO">GSM3539010</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+30
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0021R_RFS48
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691478" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203284" />
+  </Sample>
+
+  <Sample iid="GSM3539011">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro90 [NGS247_0022R_RFS49]</Title>
+    <Accession database="GEO">GSM3539011</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0022R_RFS49
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691477" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203285" />
+  </Sample>
+
+  <Sample iid="GSM3539012">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro90 [NGS247_0023R_RFS50]</Title>
+    <Accession database="GEO">GSM3539012</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0023R_RFS50
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691476" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203286" />
+  </Sample>
+
+  <Sample iid="GSM3539013">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro90 [NGS247_0024R_RFS51]</Title>
+    <Accession database="GEO">GSM3539013</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+90
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0024R_RFS51
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691475" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203287" />
+  </Sample>
+
+  <Sample iid="GSM3539014">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro240 [NGS247_0025R_RFS52]</Title>
+    <Accession database="GEO">GSM3539014</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0025R_RFS52
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691474" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203288" />
+  </Sample>
+
+  <Sample iid="GSM3539015">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro240 [NGS247_0026R_RFS53]</Title>
+    <Accession database="GEO">GSM3539015</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0026R_RFS53
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691473" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203289" />
+  </Sample>
+
+  <Sample iid="GSM3539016">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>cypro240 [NGS247_0027R_RFS54]</Title>
+    <Accession database="GEO">GSM3539016</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rice suspension culture</Source>
+      <Organism taxid="4530">Oryza sativa</Organism>
+      <Characteristics tag="treatment">
+Cyprosulfamide
+      </Characteristics>
+      <Characteristics tag="time point (minutes)">
+240
+      </Characteristics>
+      <Characteristics tag="cultivar">
+Tsukinohikari
+      </Characteristics>
+      <Characteristics tag="replicate">
+3
+      </Characteristics>
+      <Treatment-Protocol>
+doesed with 5mM stokcs of metcamifen or cyprosulfamide, prepared in dimethyl fulfoxide (DMSO) to give a final concentration of 5uM, or DMSO alone as control treatmnet.  Cells sampled at 30,90, and 240 minutes.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell suspension cultures 5 day old; n=3
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted using RiboPureTM RNA Purification Kit (Ambion, Inc.)
+Illumina Kit
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NGS247_0027R_RFS54
+    </Description>
+    <Data-Processing>
+Sequenced on Illumina HiSeqs 2000 system at 9 samples per lane; 100 bp SE reads
+FastQ files aligned to Oryza sativa cv japonica genome v7 nuclear and organelle genomes using GSNAP verion 2011_03_38.
+Count data were generated at gene level using annoations for nuclear, chloroplast and mitochondrial genomes using custom Python script; each gene received a count of +1 if FastQ file aligned in gene region definge in annotation (GFF) file for genome; single read counted multiple times:  if aligned to up to 6 gene regions
+Futher processing for publication was done in R libraries EDAseq and EdgeR
+Genome_build: Oryza sativa cv japonica genome v7 nuclear and organelle genomes
+Supplementary_files_format_and_content: Data matrix of raw count data
+    </Data-Processing>
+    <Platform-Ref ref="GPL13160" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN10691472" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX5203290" />
+  </Sample>
+
+  <Series iid="GSE124666">
+    <Status database="GEO">
+      <Submission-Date>2019-01-04</Submission-Date>
+      <Release-Date>2019-06-01</Release-Date>
+      <Last-Update-Date>2019-06-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptome response to safener treatment in rice cell cultures</Title>
+    <Accession database="GEO">GSE124666</Accession>
+    <Summary>
+Safeners are an important group of agrochemicals that can extend the selective use of existing herbicides into a wider range of cereals by protecting the crops from chemical injury.  The recently released aromatic sulphonamide safeners cyprosulfamide and metcamifen were tested for their ability to protect rice plants from the phytotoxicity caused by clodinafop-propargyl, a herbicide normally only used in wheat. Transcriptome studies in rice cultures demonstrated that whereas cyprosulfamide had a negligible effect on gene expression over a 4 h exposure, metcamifen perturbed the abundance of 590 transcripts.  Analysis of the inducible genes suggested that safening elicited similar gene families to those associated with specific biotic and abiotic stresses, notably those elicited by abscisic acid, salicylic acid and methyl-jasmonate.
+    </Summary>
+    <Overall-Design>
+Changes in the transcriptome of rice cultures exposed to metcamifen (5 µM) or  cyprosulfamide (5 µM) were determined as compared with control cells treated with the carrier solvent DMSO.  Cultures were sampled at 0.5 h, 1.5 h and 4 h after dosing and subjected to RNA-seq analysis. Three biological replicates were sequenced for each sample for a total of 27 samples
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM3538990" />
+    <Sample-Ref ref="GSM3538991" />
+    <Sample-Ref ref="GSM3538992" />
+    <Sample-Ref ref="GSM3538993" />
+    <Sample-Ref ref="GSM3538994" />
+    <Sample-Ref ref="GSM3538995" />
+    <Sample-Ref ref="GSM3538996" />
+    <Sample-Ref ref="GSM3538997" />
+    <Sample-Ref ref="GSM3538998" />
+    <Sample-Ref ref="GSM3538999" />
+    <Sample-Ref ref="GSM3539000" />
+    <Sample-Ref ref="GSM3539001" />
+    <Sample-Ref ref="GSM3539002" />
+    <Sample-Ref ref="GSM3539003" />
+    <Sample-Ref ref="GSM3539004" />
+    <Sample-Ref ref="GSM3539005" />
+    <Sample-Ref ref="GSM3539006" />
+    <Sample-Ref ref="GSM3539007" />
+    <Sample-Ref ref="GSM3539008" />
+    <Sample-Ref ref="GSM3539009" />
+    <Sample-Ref ref="GSM3539010" />
+    <Sample-Ref ref="GSM3539011" />
+    <Sample-Ref ref="GSM3539012" />
+    <Sample-Ref ref="GSM3539013" />
+    <Sample-Ref ref="GSM3539014" />
+    <Sample-Ref ref="GSM3539015" />
+    <Sample-Ref ref="GSM3539016" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE124nnn/GSE124666/suppl/GSE124666_NGS_000247_countData.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA513017" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP175277" />
+  </Series>
+
+</MINiML>

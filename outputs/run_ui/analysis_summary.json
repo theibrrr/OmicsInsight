@@ -1,0 +1,445 @@
+{
+  "project": "OmicsInsight",
+  "timestamp": "2026-04-25T16:49:47.903840",
+  "config": {
+    "counts_path": "C:\\Users\\ibrah\\Desktop\\sync_150625\\OmicsInsight\\dataset\\GSE124666\\GSE124666_NGS_000247_countData.txt",
+    "metadata_path": "C:\\Users\\ibrah\\Desktop\\sync_150625\\OmicsInsight\\dataset\\GSE124666\\GSE124666_series_matrix.txt",
+    "output_dir": "outputs/run_ui",
+    "target_column": "treatment",
+    "sample_id_column": "sample_id",
+    "max_features": 500,
+    "n_clusters": 3,
+    "log_transform": true,
+    "min_total_count": 10,
+    "min_variance": 0.0,
+    "random_state": 42,
+    "n_pca_components": 10,
+    "umap_enabled": true
+  },
+  "dataset": {
+    "n_samples": 27,
+    "n_genes_raw": 46102,
+    "n_features_after_preprocessing": 500,
+    "metadata_columns": [
+      "title",
+      "geo_accession",
+      "status",
+      "submission_date",
+      "last_update_date",
+      "type",
+      "channel_count",
+      "source_name_ch1",
+      "organism_ch1",
+      "treatment_protocol_ch1",
+      "growth_protocol_ch1",
+      "molecule_ch1",
+      "extract_protocol_ch1",
+      "taxid_ch1",
+      "description",
+      "data_processing",
+      "platform_id",
+      "contact_name",
+      "contact_email",
+      "contact_department",
+      "contact_institute",
+      "contact_address",
+      "contact_city",
+      "contact_state",
+      "contact_zip/postal_code",
+      "contact_country",
+      "data_row_count",
+      "instrument_model",
+      "library_selection",
+      "library_source",
+      "library_strategy",
+      "relation",
+      "supplementary_file_1",
+      "treatment",
+      "time_point_minutes",
+      "cultivar",
+      "replicate",
+      "sample_id"
+    ]
+  },
+  "preprocessing": {
+    "log_transform": true,
+    "min_total_count": 10,
+    "n_after_count_filter": 35931,
+    "min_variance": 0.0,
+    "n_after_variance_filter": 35931,
+    "max_features": 500,
+    "n_final_features": 500
+  },
+  "pca": {
+    "explained_variance_ratio": [
+      0.4123,
+      0.2652,
+      0.0922,
+      0.0395,
+      0.0252,
+      0.0182,
+      0.0136,
+      0.0133,
+      0.0123,
+      0.0102
+    ],
+    "cumulative_variance": [
+      0.4123,
+      0.6775,
+      0.7697,
+      0.8092,
+      0.8344,
+      0.8526,
+      0.8662,
+      0.8795,
+      0.8917,
+      0.902
+    ]
+  },
+  "clustering": {
+    "KMeans": {
+      "silhouette_score": 0.2655,
+      "adjusted_rand_index": 0.2614,
+      "cluster_sizes": {
+        "0": 6,
+        "1": 12,
+        "2": 9
+      }
+    },
+    "Agglomerative": {
+      "silhouette_score": 0.254,
+      "adjusted_rand_index": 0.192,
+      "cluster_sizes": {
+        "0": 10,
+        "1": 11,
+        "2": 6
+      }
+    }
+  },
+  "classification": {
+    "LogisticRegression": {
+      "accuracy": 0.7778,
+      "macro_f1": 0.7778,
+      "confusion_matrix": [
+        [
+          6,
+          3,
+          0
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          9
+        ]
+      ],
+      "classification_report": {
+        "Cyprosulfamide": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 9.0
+        },
+        "DMSO": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 9.0
+        },
+        "Metcamifen": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "accuracy": 0.7777777777777778,
+        "macro avg": {
+          "precision": 0.7777777777777777,
+          "recall": 0.7777777777777777,
+          "f1-score": 0.7777777777777777,
+          "support": 27.0
+        },
+        "weighted avg": {
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.7777777777777778,
+          "support": 27.0
+        }
+      },
+      "class_names": [
+        "Cyprosulfamide",
+        "DMSO",
+        "Metcamifen"
+      ]
+    },
+    "RandomForest": {
+      "accuracy": 0.7037,
+      "macro_f1": 0.7037,
+      "confusion_matrix": [
+        [
+          5,
+          3,
+          1
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          1,
+          0,
+          8
+        ]
+      ],
+      "classification_report": {
+        "Cyprosulfamide": {
+          "precision": 0.5555555555555556,
+          "recall": 0.5555555555555556,
+          "f1-score": 0.5555555555555556,
+          "support": 9.0
+        },
+        "DMSO": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 9.0
+        },
+        "Metcamifen": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8888888888888888,
+          "support": 9.0
+        },
+        "accuracy": 0.7037037037037037,
+        "macro avg": {
+          "precision": 0.7037037037037037,
+          "recall": 0.7037037037037037,
+          "f1-score": 0.7037037037037037,
+          "support": 27.0
+        },
+        "weighted avg": {
+          "precision": 0.7037037037037037,
+          "recall": 0.7037037037037037,
+          "f1-score": 0.7037037037037037,
+          "support": 27.0
+        }
+      },
+      "class_names": [
+        "Cyprosulfamide",
+        "DMSO",
+        "Metcamifen"
+      ]
+    }
+  },
+  "top_features": {
+    "top_n": 20,
+    "features": [
+      {
+        "feature": "LOC_Os07g13770",
+        "variance": 3.347458,
+        "variance_rank": 38,
+        "logreg_importance": 0.045273,
+        "logreg_rank": 30,
+        "rf_importance": 0.024566,
+        "rf_rank": 2,
+        "avg_rank": 23.333333
+      },
+      {
+        "feature": "LOC_Os10g08540",
+        "variance": 4.422212,
+        "variance_rank": 14,
+        "logreg_importance": 0.039335,
+        "logreg_rank": 51,
+        "rf_importance": 0.00942,
+        "rf_rank": 26,
+        "avg_rank": 30.333333
+      },
+      {
+        "feature": "LOC_Os09g34260",
+        "variance": 4.227281,
+        "variance_rank": 20,
+        "logreg_importance": 0.038124,
+        "logreg_rank": 55,
+        "rf_importance": 0.012236,
+        "rf_rank": 17,
+        "avg_rank": 30.666667
+      },
+      {
+        "feature": "LOC_Os09g20220",
+        "variance": 12.478846,
+        "variance_rank": 1,
+        "logreg_importance": 0.029871,
+        "logreg_rank": 99,
+        "rf_importance": 0.019279,
+        "rf_rank": 5,
+        "avg_rank": 35.0
+      },
+      {
+        "feature": "LOC_Os01g08440",
+        "variance": 11.255801,
+        "variance_rank": 2,
+        "logreg_importance": 0.026939,
+        "logreg_rank": 122,
+        "rf_importance": 0.025182,
+        "rf_rank": 1,
+        "avg_rank": 41.666667
+      },
+      {
+        "feature": "LOC_Os01g64910",
+        "variance": 4.484396,
+        "variance_rank": 11,
+        "logreg_importance": 0.031325,
+        "logreg_rank": 88,
+        "rf_importance": 0.009201,
+        "rf_rank": 27,
+        "avg_rank": 42.0
+      },
+      {
+        "feature": "LOC_Os07g44550",
+        "variance": 2.326653,
+        "variance_rank": 106,
+        "logreg_importance": 0.067739,
+        "logreg_rank": 8,
+        "rf_importance": 0.010394,
+        "rf_rank": 20,
+        "avg_rank": 44.666667
+      },
+      {
+        "feature": "LOC_Os03g57200",
+        "variance": 7.503958,
+        "variance_rank": 5,
+        "logreg_importance": 0.028058,
+        "logreg_rank": 115,
+        "rf_importance": 0.01231,
+        "rf_rank": 16,
+        "avg_rank": 45.333333
+      },
+      {
+        "feature": "LOC_Os02g16280",
+        "variance": 3.584528,
+        "variance_rank": 32,
+        "logreg_importance": 0.041424,
+        "logreg_rank": 47,
+        "rf_importance": 0.004443,
+        "rf_rank": 74,
+        "avg_rank": 51.0
+      },
+      {
+        "feature": "LOC_Os04g46600",
+        "variance": 2.142343,
+        "variance_rank": 125,
+        "logreg_importance": 0.042574,
+        "logreg_rank": 40,
+        "rf_importance": 0.01743,
+        "rf_rank": 8,
+        "avg_rank": 57.666667
+      },
+      {
+        "feature": "LOC_Os10g22310",
+        "variance": 2.882362,
+        "variance_rank": 65,
+        "logreg_importance": 0.036985,
+        "logreg_rank": 59,
+        "rf_importance": 0.005473,
+        "rf_rank": 53,
+        "avg_rank": 59.0
+      },
+      {
+        "feature": "LOC_Os09g32000",
+        "variance": 10.623636,
+        "variance_rank": 3,
+        "logreg_importance": 0.026036,
+        "logreg_rank": 134,
+        "rf_importance": 0.00571,
+        "rf_rank": 49,
+        "avg_rank": 62.0
+      },
+      {
+        "feature": "LOC_Os05g34830",
+        "variance": 4.624388,
+        "variance_rank": 10,
+        "logreg_importance": 0.026977,
+        "logreg_rank": 121,
+        "rf_importance": 0.005398,
+        "rf_rank": 55,
+        "avg_rank": 62.0
+      },
+      {
+        "feature": "LOC_Os11g04860",
+        "variance": 2.02419,
+        "variance_rank": 145,
+        "logreg_importance": 0.044995,
+        "logreg_rank": 32,
+        "rf_importance": 0.016155,
+        "rf_rank": 9,
+        "avg_rank": 62.0
+      },
+      {
+        "feature": "LOC_Os02g28220",
+        "variance": 2.615583,
+        "variance_rank": 80,
+        "logreg_importance": 0.03441,
+        "logreg_rank": 70,
+        "rf_importance": 0.006222,
+        "rf_rank": 42,
+        "avg_rank": 64.0
+      },
+      {
+        "feature": "LOC_Os04g10060",
+        "variance": 3.898075,
+        "variance_rank": 25,
+        "logreg_importance": 0.024679,
+        "logreg_rank": 153,
+        "rf_importance": 0.013032,
+        "rf_rank": 14,
+        "avg_rank": 64.0
+      },
+      {
+        "feature": "LOC_Os07g49114",
+        "variance": 2.903323,
+        "variance_rank": 63,
+        "logreg_importance": 0.028576,
+        "logreg_rank": 111,
+        "rf_importance": 0.009983,
+        "rf_rank": 21,
+        "avg_rank": 65.0
+      },
+      {
+        "feature": "LOC_Os06g11260",
+        "variance": 5.967454,
+        "variance_rank": 7,
+        "logreg_importance": 0.023785,
+        "logreg_rank": 164,
+        "rf_importance": 0.009766,
+        "rf_rank": 24,
+        "avg_rank": 65.0
+      },
+      {
+        "feature": "LOC_Os07g23570",
+        "variance": 8.411058,
+        "variance_rank": 4,
+        "logreg_importance": 0.023293,
+        "logreg_rank": 170,
+        "rf_importance": 0.009731,
+        "rf_rank": 25,
+        "avg_rank": 66.333333
+      },
+      {
+        "feature": "LOC_Os07g23710",
+        "variance": 6.247049,
+        "variance_rank": 6,
+        "logreg_importance": 0.022357,
+        "logreg_rank": 187,
+        "rf_importance": 0.017753,
+        "rf_rank": 7,
+        "avg_rank": 66.666667
+      }
+    ]
+  },
+  "warnings": []
+}

@@ -1,0 +1,30 @@
+# OmicsInsight Pipeline Configuration
+# =====================================
+# Copy this file and adjust paths/parameters as needed.
+
+# Input files (relative to project root or absolute)
+counts_path: "dataset/GSE124666/GSE124666_NGS_000247_countData.txt"
+metadata_path: "dataset/GSE124666/GSE124666_series_matrix.txt"
+
+# Output directory
+output_dir: "outputs/run_01"
+
+# Column mapping
+target_column: "treatment"
+sample_id_column: "sample_id"
+
+# Preprocessing
+log_transform: true
+min_total_count: 10
+min_variance: 0.0
+max_features: 500
+
+# Clustering
+n_clusters: 3
+
+# Dimensionality reduction
+n_pca_components: 10
+umap_enabled: true
+
+# Reproducibility
+random_state: 42
